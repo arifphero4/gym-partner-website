@@ -20,11 +20,23 @@ const Header = () => {
               <NavLink activeClassName="selected" to="/home">
                 Home
               </NavLink>
-              <NavLink activeClassName="selected" to="/allOrders">
-                Manage All Orders
+              <NavLink activeClassName="selected" to="/src">
+                Manage Items
               </NavLink>
-              <NavLink activeClassName="selected" to="/addService">
-                Add Service
+              <NavLink activeClassName="selected" to="/">
+                Add Item
+              </NavLink>
+              <NavLink activeClassName="selected" to="/">
+                My Items
+              </NavLink>
+              <NavLink activeClassName="selected" to="/">
+                Blogs
+              </NavLink>
+              <NavLink activeClassName="selected" to="/">
+                Sign In
+              </NavLink>
+              <NavLink activeClassName="selected" to="/">
+                Logout
               </NavLink>
             </Nav>
           </Navbar.Collapse>
