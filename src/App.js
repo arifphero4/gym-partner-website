@@ -10,11 +10,12 @@ import ServiceDetail from "./pages/ServiceDetail";
 import { createContext, useState } from "react";
 import useFetch from "./hooks/useFetch";
 import PrivateRoute from "./pages/Login/PrivateRoute";
+import inventory from "./pages/Login/inventory";
+import manageInventory from "./pages/Login/manageInventory";
 import NotFound from "./pages/NotFound";
 
 export const useServices = createContext();
 function App() {
-  const [loading, setLoading] = useState(false);
   const [services] = useFetch();
   return (
     <useServices.Provider value={[services]}>
@@ -27,6 +28,8 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="details/:id" element={<PrivateRoute />} />
+        <Route path="inventory/:id" element={<inventory />} />
+        <Route path="manageInventory/:id" element={<manageInventory />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
     </useServices.Provider>
