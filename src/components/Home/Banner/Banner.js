@@ -63,7 +63,7 @@ const Banner = () => {
                 <div className="row d-flex align-items-center">
                   <div className="col-lg-6 col-md-6 col-sm-12 mt-5 text-center">
                     <h1>
-                      Sometimes We have
+                      Sometimes We have do
                       <br />
                       <span style={{ color: "#ED1C24" }}>Free Delivery</span>
                     </h1>
