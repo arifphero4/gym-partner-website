@@ -3,7 +3,7 @@ import React from "react";
 import Rating from "react-rating";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { Link } from "react-router-dom";
-const Inventory = ({ service }) => {
+const ManageInventory = ({ service }) => {
   const { img, title, description, price, review, key } = service;
   return (
     <div
@@ -40,4 +40,4 @@ const Inventory = ({ service }) => {
   );
 };
 
-export default Inventory;
+export default ManageInventory;
