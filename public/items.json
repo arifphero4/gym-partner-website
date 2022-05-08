@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Heiking Gear 1",
+        "image":
+          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+        "price": 317,
+        "quantity": 42,
+        "supplier": "Johnny Deep"
+      },
+      {
+        "id": 2,
+        "name": "Heiking Gear 2",
+        "image":
+          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+        "price": 317,
+        "quantity": 42,
+        "supplier": "Johnny Deep"
+      },
+      {
+        "id": 3,
+        "name": "Heiking Gear 3",
+        "image":
+          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+        "price": 317,
+        "quantity": 42,
+        "supplier": "Johnny Deep"
+      },
+      {
+        "id": 4,
+        "name": "Heiking Gear 4",
+        "image":
+          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+        "price": 317,
+        "quantity": 42,
+        "supplier": "Johnny Deep"
+      },
+      {
+        "id": 5,
+        "name": "Heiking Gear 5",
+        "image":
+          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+        "price": 317,
+        "quantity": 42,
+        "supplier": "Johnny Deep"
+      },
+      {
+        "id": 6,
+        "name": "Heiking Gear 6",
+        "image":
+          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+        "price": 317,
+        "quantity": 42,
+        "supplier": "Johnny Deep"
+      },
+      {
+        "id": 7,
+        "name": "Heiking Gear 7",
+        "image":
+          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+        "price": 317,
+        "quantity": 42,
+        "supplier": "Johnny Deep"
+      },
+      {
+        "id": 8,
+        "name": "Heiking Gear 8",
+        "image":
+          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+        "description":
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+        "price": 317,
+        "quantity": 42,
+        "supplier": "Johnny Deep"
+      }
+]

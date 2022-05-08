@@ -33,7 +33,7 @@ const Footer = () => {
             Tezgaw Industrial area, Dhaka-1208.
           </p>
           <p>09728932748</p>
-          <p>contact@redx.com.bd</p>
+          <p>contact@hikero.com</p>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12">
           <h4>Social Links</h4>
