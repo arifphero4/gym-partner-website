@@ -19,3 +19,4 @@ https://hikero-warehouse-arifphero4.netlify.app/
   - Express.js
   - Node.js
   - MongoDB
+  - JWT
