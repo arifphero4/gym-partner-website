@@ -7,7 +7,7 @@ const AddItem = () => {
   return (
     <div>
       <Header></Header>
-      <div style={{ marginTop: "120px" }}>
+      <div style={{ marginTop: "80px" }}>
         {" "}
         <AddItems></AddItems>
       </div>
