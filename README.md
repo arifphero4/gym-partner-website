@@ -3,6 +3,7 @@
 hikero is a hiking gears warehouse management website
 
 ## Project Livesite link
+
 https://hikero-warehouse-web.web.app/
 
 ### Elements used for project
@@ -13,6 +14,7 @@ https://hikero-warehouse-web.web.app/
   - React Router
   - Firebase
   - React Bootstrap
+  - React Hook Form
 
 - #### For back-end
   - Express.js
