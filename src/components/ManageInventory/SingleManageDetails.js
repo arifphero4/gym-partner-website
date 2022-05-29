@@ -1,9 +1,8 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
 
 const SingleManageDetails = ({ product, index }) => {
-  const { _id, name, price, quantity, supplier } = product;
+  const { name, price, quantity, supplier } = product;
 
   const removeProduct = (id) => {
     swal({

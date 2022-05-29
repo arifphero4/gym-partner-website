@@ -18,12 +18,13 @@ const ManageDetails = () => {
           add new item
         </button>
       </Link>
-      <h2 className="text-success text-center">
-        total Inventory items: {products.length}
+      <h2 className="text-success text-uppercase text-center">
+        total Inventory items:{" "}
+        <span className="text-danger"> {products.length}</span>
       </h2>
       <div className="px-5">
         <table class="table">
-          <thead>
+          <thead className="text-center">
             <tr>
               <th scope="col">ID</th>
               <th scope="col">Name</th>
@@ -33,7 +34,7 @@ const ManageDetails = () => {
               <th scope="col">Remove</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="text-center">
             {products?.map((product, index) => (
               <SingleManageDetails
                 key={product.id}
