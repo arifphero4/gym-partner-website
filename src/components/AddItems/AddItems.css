@@ -1,0 +1,39 @@
+.add-service {
+    padding-top: 120px;
+  }
+  
+  .form {
+    width: 450px;
+    margin: 0 auto;
+  }
+  
+  .form input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid gray;
+    outline: none;
+  }
+  
+  .form textarea {
+    height: 140px;
+  }
+  
+  .addBtn {
+    background-color: #ed1c24;
+    color: #10b377;
+    width: 100%;
+  }
+  
+  .addBtn:hover {
+    color: #fff;
+    background-color: #e72b31;
+  }
+  
+  @media only screen and (max-width: 414px) {
+    .form {
+      width: 100%;
+    }
+  }

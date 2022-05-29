@@ -1,38 +1,44 @@
-import "./App.css";
-import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Blogs from "./pages/Blogs";
-import Login from "./pages/Login/Login";
-import Register from "./pages/Login/Register";
-import ServiceDetail from "./pages/ServiceDetail";
-import { createContext, useState } from "react";
-import useFetch from "./hooks/useFetch";
-import PrivateRoute from "./pages/Login/PrivateRoute";
-import inventory from "./pages/Login/inventory";
-import manageInventory from "./pages/Login/manageInventory";
-import NotFound from "./pages/NotFound";
+import "./App.css";
+import Login from "./components/SignUp/Login/Login";
+import Register from "./components/SignUp/Register/Register";
+import RequireAuth from "./components/SignUp/RequireAuth/RequireAuth";
+import Abouts from "./Pages/Abouts";
+import AddItem from "./Pages/AddItem";
+import Blog from "./Pages/Blog";
+import Home from "./Pages/Home";
+import InventoryDetails from "./Pages/InventoryDetails";
+import ManageInventories from "./Pages/ManageInventories";
+import MyItem from "./Pages/MyItem";
+import NotFound from "./Shared/NotFound/NotFound";
 
-export const useServices = createContext();
 function App() {
-  const [services] = useFetch();
   return (
-    <useServices.Provider value={[services]}>
+    <div>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="home" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="services" element={<Services />} />
-        <Route path="blogs" element={<Blogs />} />
-        <Route path="login" element={<Login />} />
-        <Route path="register" element={<Register />} />
-        <Route path="details/:id" element={<PrivateRoute />} />
-        <Route path="inventory/:id" element={<inventory />} />
-        <Route path="manageInventory/:id" element={<manageInventory />} />
-        <Route path="/*" element={<NotFound />} />
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route
+          path="/manageInventory"
+          element={<ManageInventories></ManageInventories>}
+        ></Route>
+        <Route path="/addItems" element={<AddItem></AddItem>}></Route>
+        <Route path="/myItems" element={<MyItem></MyItem>}></Route>
+        <Route path="/blogs" element={<Blog></Blog>}></Route>
+        <Route path="/about" element={<Abouts></Abouts>}></Route>
+        <Route
+          path="/inventory/:id"
+          element={
+            <RequireAuth>
+              <InventoryDetails></InventoryDetails>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
-    </useServices.Provider>
+    </div>
   );
 }
 

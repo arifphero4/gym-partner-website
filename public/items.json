@@ -1,90 +1,90 @@
 [
     {
-        "id": 1,
-        "name": "Heiking Gear 1",
+        "_id": 1,
+        "name": "Garmin InReach Mini 2",
         "image":
-          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+          "https://hikingguy.com/wp-content/uploads/garmin-inreach-mini-2-420x559.jpeg",
         "description":
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+          "I’m a firm believer in carrying a satellite communications device which works where cell phones don’t. I use a Garmin InReach which lets me send text messages back and forth to my family to let them know that I’m okay or if my plans change when I’m out in the backcountry.",
         "price": 317,
-        "quantity": 42,
-        "supplier": "Johnny Deep"
+        "quantity": 98,
+        "supplier": " Robert  Charles "
       },
       {
-        "id": 2,
-        "name": "Heiking Gear 2",
+        "_id": 2,
+        "name": "Gregory Zulu 30 & Jade 28",
         "image":
-          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+          "https://hikingguy.com/wp-content/uploads/gregory-zulu-30-420x552.jpeg",
         "description":
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+          "After testing quite a few backpacks, the Gregory Zulu 30 (and Jade 28 for women) is, for most hikers, the best all-season day-pack. First off, it’s very comfortable, and the mesh “trampoline” back keeps your back dry. Its 30L capacity is enough for all the essentials and plenty of layers for winter hiking.",
         "price": 317,
-        "quantity": 42,
-        "supplier": "Johnny Deep"
+        "quantity": 83,
+        "supplier": "Tom Halland"
       },
       {
-        "id": 3,
-        "name": "Heiking Gear 3",
+        "_id": 3,
+        "name": "Trail Ergo Cork Trekking Poles",
         "image":
-          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+          "https://hikingguy.com/wp-content/uploads/black-diamond-ergo-poles-2.jpeg",
         "description":
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+          "The Trail Ergo Cork poles are a good balance of light weight, durability, affordability, and ease of use. If you want something ultralight and a little more pricey, I’ve had great luck with the Black Diamond Z Poles too.",
         "price": 317,
-        "quantity": 42,
-        "supplier": "Johnny Deep"
+        "quantity": 66,
+        "supplier": "Chris Evans"
       },
       {
-        "id": 4,
-        "name": "Heiking Gear 4",
+        "_id": 4,
+        "name": "Altra Lone Peak 6",
         "image":
-          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+          "https://hikingguy.com/wp-content/uploads/lone-peak-6-yellow-420x199.jpeg",
         "description":
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+          "For most people, the Altra Lone Peak is a solid choice that will leave your feet feeling great at the end of any hike. The feel is cushy and light, and if it had a car equivalent, this would be a Cadillac or Mercedes Sedan.",
         "price": 317,
-        "quantity": 42,
-        "supplier": "Johnny Deep"
+        "quantity": 79,
+        "supplier": "Robert Downey"
       },
       {
-        "id": 5,
-        "name": "Heiking Gear 5",
+        "_id": 5,
+        "name": "Gaia GPS",
         "image":
-          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+          "https://hikingguy.com/wp-content/uploads/gaiagps-1-420x341.jpg",
         "description":
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+          "Now smartphones are not backcountry instruments, but almost everyone has one today. And they all have GPS on board. So I recommend getting a good GPS hiking app like Gaia GPS that supports offline maps.",
         "price": 317,
-        "quantity": 42,
-        "supplier": "Johnny Deep"
+        "quantity": 52,
+        "supplier": "Steves Harvey"
       },
       {
-        "id": 6,
-        "name": "Heiking Gear 6",
+        "_id": 6,
+        "name": "Garmin Epix",
         "image":
-          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+          "https://hikingguy.com/wp-content/uploads/garmin-epix-420x476.jpeg",
         "description":
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+          "Another option for a dedicated GPS is to have a mapping smartwatch. They’re not cheap, but they include topographic maps, an accurate GPS, altimeter, and compass. The watch is also a fitness tracker, sleep tracker, can load other apps, etc. ",
         "price": 317,
-        "quantity": 42,
-        "supplier": "Johnny Deep"
+        "quantity": 65,
+        "supplier": "Mark Don"
       },
       {
-        "id": 7,
-        "name": "Heiking Gear 7",
+        "_id": 7,
+        "name": "Garmin GPSMAP 66",
         "image":
-          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+          "https://hikingguy.com/wp-content/uploads/gpsmap-66i-420x355.jpg",
         "description":
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+          "Why get a dedicated GPS unit? The interface might not be as slick as a new smartphone, but a GPS like this is built for the outdoors, works in heavy rain, and with gloves on. You can also get more granular control over your track recording and navigation. ",
         "price": 317,
-        "quantity": 42,
-        "supplier": "Johnny Deep"
+        "quantity": 16,
+        "supplier": "Elizabeth Rogers"
       },
       {
-        "id": 8,
-        "name": "Heiking Gear 8",
+        "_id": 8,
+        "name": "Gerber Truss Multi-Tool",
         "image":
-          "https://zingy-crumble-89d2f9.netlify.app/photos/85930-jumping-jack.gif",
+          "https://img.dtcn.com/image/themanual/gerber-truss-multi-tool-800x800.jpg",
         "description":
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde modi aperiam nihil. Iusto repudiandae a eius, magni quae quos omnis!",
+          "We never leave home without a multi-tool, especially ahead of a day on the trail. Gerber’s Truss is a near-perfect multi-tool designed to tackle most everyday tasks. It hits the sweet spot between size, usability, versatility, and price.",
         "price": 317,
-        "quantity": 42,
+        "quantity": 35,
         "supplier": "Johnny Deep"
       }
 ]

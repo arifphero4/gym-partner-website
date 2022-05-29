@@ -1,0 +1,55 @@
+.form-area{
+    font-family: sans-serif;
+    text-align: center;
+    border: 2px solid #29b965;
+    margin-top: 10px;
+    padding: 20px 0;
+    border-radius: 15px;
+}
+
+.form-area h4{
+    font-weight: bold;
+}
+
+.form-area input{
+    height: 40px;
+    width: 450px;
+    text-indent: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #29b965;
+}
+
+.securityBtn{
+    border: none;
+    background: #29b965;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .form-area{
+        padding: 20px 20px;
+        margin-bottom: 25px;
+    }
+
+    .form-area input{
+        width: 100%;
+    }
+}
+
+/* apiKey:process.env.REACT_APP_apiKey,
+authDomain:process.env.REACT_APP_authDomain,
+projectId:process.env.REACT_APP_projectId,
+storageBucket:process.env.REACT_APP_storageBucket,
+messagingSenderId:process.env.REACT_APP_messagingSenderId,
+appId:process.env.REACT_APP_appId, */
+
+/* apiKey: "AIzaSyBTldnhY4P19pU7x3TywIL87Tdh8sE6kPU",
+  authDomain: "hikero-warehouse-web.firebaseapp.com",
+  projectId: "hikero-warehouse-web",
+  storageBucket: "hikero-warehouse-web.appspot.com",
+  messagingSenderId: "212053215452",
+  appId: "1:212053215452:web:d2bd0a51dc2f3649db8c19", */

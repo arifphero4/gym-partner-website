@@ -3,6 +3,8 @@ import "./Footer.css";
 import logo from "../../images/logo.gif";
 
 const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
   return (
     <div className="footer">
       <div className="row">
@@ -11,7 +13,7 @@ const Footer = () => {
             <h3 className="logo">
               <img width="120px" src={logo} alt="" />
             </h3>
-            <p>Download the RedX app for the fastest solution</p>
+            <p>Download the hikero app for the fastest solution</p>
           </div>
           <img
             width="220px"
@@ -42,7 +44,7 @@ const Footer = () => {
             <i class="fab fa-linkedin-in">G</i>
             <i class="fab fa-youtube">T</i>
           </div>
-          <small>&copy; 2022. All rights reserved</small>
+          <small>&copy;{year} All rights reserved</small>
         </div>
       </div>
     </div>

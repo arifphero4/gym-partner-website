@@ -1,0 +1,10 @@
+.g-btn{
+    background-color: #fff;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px gray;
+    font-size: 19px;
+    font-weight: 500;
+    margin: 15px 0;
+}
