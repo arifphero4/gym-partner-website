@@ -9,15 +9,18 @@ const ManageDetails = () => {
     fetch("http://localhost:5000/inventory")
       .then((res) => res.json())
       .then((data) => setProducts(data));
-  }, []);
+  }, [products]);
   return (
     <div className="container">
-      <Link to="/addItems">
-        {" "}
-        <button className="text-uppercase btn btn-success p-3 m-5  fw-bold">
-          add new item
-        </button>
-      </Link>
+      <div className="d-flex justify-content-center">
+        <Link to="/addItems">
+          {" "}
+          <button className="text-uppercase btn btn-success p-3 m-5  fw-bold">
+            add new item
+          </button>
+        </Link>
+      </div>
+
       <h2 className="text-success text-uppercase text-center">
         total Inventory items:{" "}
         <span className="text-danger"> {products.length}</span>
@@ -37,7 +40,7 @@ const ManageDetails = () => {
           <tbody className="text-center">
             {products?.map((product, index) => (
               <SingleManageDetails
-                key={product.id}
+                key={product._id}
                 index={index}
                 product={product}
               ></SingleManageDetails>

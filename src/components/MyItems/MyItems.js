@@ -1,21 +1,46 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
+import swal from "sweetalert";
 import auth from "../../firebase.init";
 
 const MyItems = () => {
   const [user] = useAuthState(auth);
-  const [myItems, setMyItems] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    const getItems = async () => {
-      const email = user.email;
-      const url = `http://localhost:5000/myitem?email=${email}`;
-      const { data } = await axios.get(url);
-      setMyItems(data);
-    };
-    getItems();
-  }, [user]);
+    fetch(`http://localhost:5000/inventory/`, {
+      method: "GET",
+      headers: {
+        "content-type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setOrders(data.filter((d) => user.email === d.email));
+      });
+  }, [orders]);
+
+  const removeProduct = (id) => {
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover user!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        fetch(`http://localhost:5000/inventory/${id}`, {
+          method: "DELETE",
+        }).then((res) => res.json());
+
+        swal("item deleted seccessfully", {
+          icon: "success",
+        });
+      } else {
+        swal("Your product is safe!");
+      }
+    });
+  };
 
   return (
     <div className="px-5">
@@ -27,50 +52,19 @@ const MyItems = () => {
             <th scope="col">Price</th>
             <th scope="col">Quantity</th>
             <th scope="col">Supplier</th>
-            <th scope="col">Remove</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
+          {orders?.map((order, index) => (
+            <tr>
+              <th scope="row">{index + 1}</th>
+
+              <td>{order.name}</td>
+              <td> $ {order.price}</td>
+              <td>{order.quantity}</td>
+              <td>{order.supplier}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

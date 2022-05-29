@@ -7,7 +7,11 @@ const Blog = () => {
   return (
     <div>
       <Header></Header>
-      <Blogs></Blogs>
+      <div style={{ marginTop: "150px" }}>
+        {" "}
+        <Blogs></Blogs>
+      </div>
+
       <Footer></Footer>
     </div>
   );

@@ -36,7 +36,7 @@ const SingleManageDetails = ({ product, index }) => {
     <tr>
       <th scope="row">{index + 1} </th>
       <td>{name}</td>
-      <td>{price}</td>
+      <td>$ {price}</td>
       <td>{supplier}</td>
       <td>{quantity}</td>
       <td>

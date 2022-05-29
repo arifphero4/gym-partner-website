@@ -7,7 +7,11 @@ const AddItem = () => {
   return (
     <div>
       <Header></Header>
-      <AddItems></AddItems>
+      <div style={{ marginTop: "120px" }}>
+        {" "}
+        <AddItems></AddItems>
+      </div>
+
       <Footer></Footer>
     </div>
   );

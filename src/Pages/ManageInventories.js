@@ -7,7 +7,10 @@ const ManageInventories = () => {
   return (
     <div>
       <Header></Header>
-      <ManageDetails></ManageDetails>
+      <div style={{ marginTop: "150px" }}>
+        <ManageDetails></ManageDetails>
+      </div>
+
       <Footer></Footer>
     </div>
   );

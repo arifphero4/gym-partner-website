@@ -1,17 +1,39 @@
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
+import swal from "sweetalert";
+import auth from "../../firebase.init";
 
 import "./AddItems.css";
 
 const AddItems = () => {
+  const [user] = useAuthState(auth);
   const {
     register,
     handleSubmit,
+    reset,
     watch,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    data.email = user.email;
+
+    // fetch("http://localhost:5000/inventory");
+    fetch("http://localhost:5000/inventory", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if (result.insertedId) {
+          swal("Complete", "Product added to cart!", "success");
+          reset();
+        }
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -57,10 +79,10 @@ const AddItems = () => {
             <input
               placeholder="supplier name"
               defaultValue=""
-              {...register("supplierName", { required: true })}
+              {...register("supplier", { required: true })}
             />
             <br />
-            {errors.supplierName && (
+            {errors.supplier && (
               <span className="text-danger">This field is required</span>
             )}
             <br />

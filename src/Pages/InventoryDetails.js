@@ -12,12 +12,12 @@ const InventoryDetails = () => {
     fetch(`http://localhost:5000/inventory/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
-  }, [id]);
+  }, [isReload]);
 
   const handleDelivered = (id) => {
     const quantity = product.quantity;
     let newQuantity = quantity - 1;
-    const newProduct = { ...product, quantity: newQuantity };
+    const newProduct = { quantity: newQuantity };
     setProduct(newProduct);
 
     if (newQuantity > -1) {
@@ -40,8 +40,9 @@ const InventoryDetails = () => {
     const newStock = parseInt(stock);
     const oldStock = parseInt(product.quantity);
     const restock = oldStock + newStock;
-    const newProduct = { ...product, quantity: restock };
+    const newProduct = { quantity: restock };
 
+    console.log(newProduct);
     fetch(`http://localhost:5000/inventory/${id}`, {
       method: "PUT",
       headers: {
@@ -59,7 +60,7 @@ const InventoryDetails = () => {
     <>
       <Header></Header>
 
-      <div className="container">
+      <div className="container" style={{ marginTop: "150px" }}>
         <div className="row d-flex align-items-center  ">
           <div className="col-lg-6 col-md-6 col-sm-12 d-flex  bg-light py-5">
             <img width="40%" src={product.image} alt="map" />
