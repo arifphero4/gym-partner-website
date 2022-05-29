@@ -2,7 +2,7 @@ import React from "react";
 import swal from "sweetalert";
 
 const SingleManageDetails = ({ product, index }) => {
-  const { name, price, quantity, supplier } = product;
+  const { _id, name, price, quantity, supplier } = product;
 
   const removeProduct = (id) => {
     swal({
@@ -17,11 +17,11 @@ const SingleManageDetails = ({ product, index }) => {
           method: "DELETE",
         }).then((res) => res.json());
 
-        swal("user deleted seccessfully", {
+        swal("item deleted seccessfully", {
           icon: "success",
         });
       } else {
-        swal("Your imaginary file is safe!");
+        swal("Your product is safe!");
       }
     });
   };
@@ -41,7 +41,7 @@ const SingleManageDetails = ({ product, index }) => {
       <td>{quantity}</td>
       <td>
         <button
-          onClick={removeProduct}
+          onClick={() => removeProduct(_id)}
           className="text-uppercase btn btn-danger   fw-bold"
         >
           {" "}

@@ -1,6 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import swal from "sweetalert";
+
 import "./AddItems.css";
 
 const AddItems = () => {
@@ -14,7 +14,7 @@ const AddItems = () => {
     console.log(data);
   };
   return (
-    <div>
+    <div className="min-vh-100">
       <div className="container mb-4 add-service">
         <h2 className="text-center text-success mb-3">
           Add a new Item on Inventory
