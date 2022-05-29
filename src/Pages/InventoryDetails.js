@@ -6,11 +6,55 @@ import Header from "../Shared/Header/Header";
 const InventoryDetails = () => {
   const { id } = useParams();
   const [product, setProduct] = useState({});
+  const [isReload, setIsReload] = useState(false);
+
   useEffect(() => {
     fetch(`http://localhost:5000/inventory/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
+
+  const handleDelivered = (id) => {
+    const quantity = product.quantity;
+    let newQuantity = quantity - 1;
+    const newProduct = { ...product, quantity: newQuantity };
+    setProduct(newProduct);
+
+    if (newQuantity > -1) {
+      fetch(`http://localhost:5000/inventory/${id}`, {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(newProduct),
+      })
+        .then((res) => res.json())
+        .then((data) => setIsReload(!isReload));
+    }
+  };
+
+  const handleUpdateStock = (event) => {
+    event.preventDefault();
+
+    const stock = event.target.AddQuantity.value;
+    const newStock = parseInt(stock);
+    const oldStock = parseInt(product.quantity);
+    const restock = oldStock + newStock;
+    const newProduct = { ...product, quantity: restock };
+
+    fetch(`http://localhost:5000/inventory/${id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newProduct),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setIsReload(!isReload);
+        event.target.reset();
+      });
+  };
   return (
     <>
       <Header></Header>
@@ -35,15 +79,20 @@ const InventoryDetails = () => {
               <h5>
                 Supplier: <i>{product.supplier}</i>
               </h5>
-              <button className="btn btn-danger py-2">Delivered</button>
+              <button
+                className="btn btn-danger py-2"
+                onClick={() => handleDelivered(id)}
+              >
+                Delivered
+              </button>
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 text-center  ">
-            <form className=" text-center">
+            <form onSubmit={handleUpdateStock} className=" text-center">
               <input
                 className="w-50 ps-2 p-2"
                 type="number"
-                name="quantity"
+                name="AddQuantity"
                 placeholder="add quantity"
                 required
                 id=""
