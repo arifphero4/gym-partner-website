@@ -23,7 +23,7 @@ const ManageDetails = () => {
         <span className="text-danger"> {products.length}</span>
       </h2>
       <div className="px-5">
-        <table class="table">
+        <table className="table">
           <thead className="text-center">
             <tr>
               <th scope="col">ID</th>

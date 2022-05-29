@@ -40,9 +40,9 @@ const Footer = () => {
         <div className="col-lg-3 col-md-6 col-sm-12">
           <h4>Social Links</h4>
           <div className="icons mb-3">
-            <i class="fab fa-facebook-f">FB</i>
-            <i class="fab fa-linkedin-in">G</i>
-            <i class="fab fa-youtube">T</i>
+            <i className="fab fa-facebook-f">FB</i>
+            <i className="fab fa-linkedin-in">G</i>
+            <i className="fab fa-youtube">T</i>
           </div>
           <small>&copy;{year} All rights reserved</small>
         </div>

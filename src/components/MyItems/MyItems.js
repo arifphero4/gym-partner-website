@@ -3,7 +3,7 @@ import React from "react";
 const MyItems = () => {
   return (
     <div className="px-5">
-      <table class="table">
+      <table className="table">
         <thead>
           <tr>
             <th scope="col">ID</th>
