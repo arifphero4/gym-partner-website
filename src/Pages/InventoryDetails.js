@@ -9,7 +9,7 @@ const InventoryDetails = () => {
   const [isReload, setIsReload] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/inventory/${id}`)
+    fetch(`https://guarded-stream-39740.herokuapp.com/inventory/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [isReload]);
@@ -21,7 +21,7 @@ const InventoryDetails = () => {
     setProduct(newProduct);
 
     if (newQuantity > -1) {
-      fetch(`http://localhost:5000/inventory/${id}`, {
+      fetch(`https://guarded-stream-39740.herokuapp.com/inventory/${id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
@@ -43,7 +43,7 @@ const InventoryDetails = () => {
     const newProduct = { quantity: restock };
 
     console.log(newProduct);
-    fetch(`http://localhost:5000/inventory/${id}`, {
+    fetch(`https://guarded-stream-39740.herokuapp.com/inventory/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

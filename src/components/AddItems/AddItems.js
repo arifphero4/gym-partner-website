@@ -18,8 +18,8 @@ const AddItems = () => {
   const onSubmit = (data) => {
     data.email = user.email;
 
-    // fetch("http://localhost:5000/inventory");
-    fetch("http://localhost:5000/inventory", {
+    // fetch("https://guarded-stream-39740.herokuapp.com/inventory");
+    fetch("https://guarded-stream-39740.herokuapp.com/inventory", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

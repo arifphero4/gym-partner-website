@@ -13,7 +13,7 @@ const SingleManageDetails = ({ product, index }) => {
       dangerMode: true,
     }).then((willDelete) => {
       if (willDelete) {
-        fetch(`http://localhost:5000/inventory/${id}`, {
+        fetch(`https://guarded-stream-39740.herokuapp.com/inventory/${id}`, {
           method: "DELETE",
         }).then((res) => res.json());
 

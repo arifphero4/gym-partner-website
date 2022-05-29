@@ -8,7 +8,7 @@ const MyItems = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/inventory/`, {
+    fetch(`https://guarded-stream-39740.herokuapp.com/inventory/`, {
       method: "GET",
       headers: {
         "content-type": "application/json",
@@ -29,7 +29,7 @@ const MyItems = () => {
       dangerMode: true,
     }).then((willDelete) => {
       if (willDelete) {
-        fetch(`http://localhost:5000/inventory/${id}`, {
+        fetch(`https://guarded-stream-39740.herokuapp.com/inventory/${id}`, {
           method: "DELETE",
         }).then((res) => res.json());
 

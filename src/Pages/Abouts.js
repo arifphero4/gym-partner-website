@@ -7,7 +7,7 @@ const Abouts = () => {
   return (
     <div>
       <Header></Header>
-      <div style={{ marginTop: "150px" }}>
+      <div style={{ marginTop: "120px" }}>
         <About></About>
       </div>
       <Footer></Footer>
