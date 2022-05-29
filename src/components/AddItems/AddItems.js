@@ -10,22 +10,8 @@ const AddItems = () => {
     watch,
     formState: { errors },
   } = useForm();
-  const onSubmit = (e) => {
-    e.preventDefault();
-    /*  fetch("https://powerful-tor-47395.herokuapp.com/addService", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.acknowledged) {
-          swal("Great!", "You Added a New Service!", "success");
-          e.target.reset();
-        }
-      }); */
+  const onSubmit = (data) => {
+    console.log(data);
   };
   return (
     <div>
@@ -46,25 +32,6 @@ const AddItems = () => {
             )}
             <br />
 
-            <input
-              placeholder="image url"
-              {...register("image", { required: true })}
-            />
-            <br />
-            {errors.image && (
-              <span className="text-danger">This field is required</span>
-            )}
-            <br />
-
-            <textarea
-              placeholder="description"
-              {...register("description", { required: true })}
-            />
-            <br />
-            {errors.description && (
-              <span className="text-danger">This field is required</span>
-            )}
-            <br />
             <input
               placeholder="price"
               type="number"

@@ -14,13 +14,14 @@ const Review = () => {
             <Card style={{ width: "20rem" }} className="card-area">
               <Card.Img variant="top" src="https://tinyurl.com/y2es829x" />
               <Card.Body>
-                <Card.Title>Hiking 1</Card.Title>
+                <Card.Title>Hiking Backpack-1</Card.Title>
                 <Card.Text>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Minus autem similique expedita mollitia provident sapiente
-                    ullam et exercitationem inventore quia, adipisci, aut dolore
-                    hic dolor? In earum nemo ipsa officiis.
+                    whenever you step into the backcountry, even on day hikes,
+                    is a good habit. True, on a routine trip you may use only a
+                    few of them or none at all. It’s when something goes awry
+                    that you’ll truly appreciate the value of carrying these
+                    items that could be essential to your survival.
                   </p>
                 </Card.Text>
               </Card.Body>
@@ -30,13 +31,14 @@ const Review = () => {
             <Card style={{ width: "20rem" }} className="card-area">
               <Card.Img variant="top" src="https://tinyurl.com/p52tmp74" />
               <Card.Body>
-                <Card.Title>Hiking 2</Card.Title>
+                <Card.Title>Hiking Backpack-2</Card.Title>
                 <Card.Text>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Minus autem similique expedita mollitia provident sapiente
-                    ullam et exercitationem inventore quia, adipisci, aut dolore
-                    hic dolor? In earum nemo ipsa officiis.
+                    whenever you step into the backcountry, even on day hikes,
+                    is a good habit. True, on a routine trip you may use only a
+                    few of them or none at all. It’s when something goes awry
+                    that you’ll truly appreciate the value of carrying these
+                    items that could be essential to your survival.
                   </p>
                 </Card.Text>
               </Card.Body>
@@ -46,13 +48,14 @@ const Review = () => {
             <Card style={{ width: "20rem" }} className="card-area">
               <Card.Img variant="top" src="https://tinyurl.com/2c2phc7m" />
               <Card.Body>
-                <Card.Title>Hiking 3</Card.Title>
+                <Card.Title>Hiking Backpack-3</Card.Title>
                 <Card.Text>
                   <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Minus autem similique expedita mollitia provident sapiente
-                    ullam et exercitationem inventore quia, adipisci, aut dolore
-                    hic dolor? In earum nemo ipsa officiis.
+                    whenever you step into the backcountry, even on day hikes,
+                    is a good habit. True, on a routine trip you may use only a
+                    few of them or none at all. It’s when something goes awry
+                    that you’ll truly appreciate the value of carrying these
+                    items that could be essential to your survival.
                   </p>
                 </Card.Text>
               </Card.Body>

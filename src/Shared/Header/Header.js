@@ -33,7 +33,7 @@ const Header = () => {
                     as={Link}
                     to="/manageInventory"
                   >
-                    Manage Inventory
+                    Manage Items
                   </NavLink>
                   <NavLink activeClassName="selected" as={Link} to="/addItems">
                     Add Item

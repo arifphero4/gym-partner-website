@@ -1,21 +1,19 @@
 import React, { useEffect, useState } from "react";
-import SingleInventory from "../../../hooks/SingleInventory";
 
 import "./Inventory.css";
+import SingleInventory from "./SingleInventory";
 
 const Inventory = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("items.json")
+    fetch("http://localhost:5000/inventory")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
   return (
     <div className="container">
-      <h2 className="text-success text-center">
-        total Inventory items: {products.length}
-      </h2>
+      <h2 className="text-success text-uppercase text-center">Inventory</h2>
       <div className="row">
         {products?.slice(0, 6)?.map((product) => (
           <SingleInventory
