@@ -3,9 +3,9 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import swal from "sweetalert";
 import auth from "../../firebase.init";
-
 import "./AddItems.css";
 
+/* hosting E jhamela */
 const AddItems = () => {
   const [user] = useAuthState(auth);
   const {
